@@ -16,6 +16,14 @@ namespace MiniBars.Framework
                     return true;
                 }
             }
+
+            if(ModEntry.instance.Helper.ModRegistry.IsLoaded("FlyingTNT.Swim"))
+            {
+                if(Game1.player.currentLocation.Name.StartsWith("Custom_Underwater"))
+                {
+                    return true;
+                }
+            }
             
             if (Game1.player.currentLocation.Name == "Slime Hutch")
             {
